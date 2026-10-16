@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ರಜೆ ಅರ್ಜಿ ಪತ್ರ | Leave Application Letter (Kannada)</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', 'Noto Sans Kannada', Arial, sans-serif;
+    background: #e0e0e0;
+    padding: 15px;
+  }
+
+  .master-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .printable-sheet {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    line-height: 2;
+    font-size: 16px;
+    color: #222;
+  }
+
+  /* Header */
+  .letter-header {
+    text-align: right;
+    margin-bottom: 16px;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .letter-header input {
+    border: none;
+    border-bottom: 1px dotted #888;
+    outline: none;
+    font-size: 15px;
+    font-family: inherit;
+    background: transparent;
+    padding: 0 4px;
+  }
+
+  /* To Address Section */
+  .to-section {
+    margin-bottom: 16px;
+    line-height: 1.8;
+  }
+
+  .to-section div {
+    margin-bottom: 4px;
+  }
+
+  .to-section input {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    background: transparent;
+    padding: 0 4px;
+    min-width: 250px;
+  }
+
+  /* Subject */
+  .subject-line {
+    font-weight: bold;
+    margin: 18px 0 14px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .subject-line input {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: inherit;
+    background: transparent;
+    width: 100%;
+    padding: 0 4px;
+  }
+
+  /* Letter Body */
+  .letter-body {
+    text-align: justify;
+    margin-bottom: 14px;
+  }
+
+  .letter-body p {
+    margin: 10px 0;
+    text-indent: 48px;
+  }
+
+  .letter-body input,
+  .letter-body select {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    background: transparent;
+    padding: 0 4px;
+    min-width: 120px;
+  }
+
+  /* Inline Select Dropdown */
+  .inline-select {
+    border: 1px solid #aaa !important;
+    border-radius: 4px;
+    padding: 2px 6px !important;
+    background: #fff !important;
+    font-size: 15px !important;
+    cursor: pointer;
+  }
+
+  .custom-reason-line {
+    margin: 8px 0 12px 0;
+    padding-left: 48px;
+  }
+
+  .custom-reason-line input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 6px 10px;
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+  }
+
+  /* Date Row */
+  .date-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+    padding-left: 48px;
+  }
+
+  .date-row input[type="date"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 15px;
+    font-family: inherit;
+    background: transparent;
+    padding: 2px 4px;
+  }
+
+  /* Centered Thank You */
+  .thank-you {
+    text-align: center;
+    margin: 25px 0 15px 0;
+  }
+
+  .thank-you input {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    background: transparent;
+    min-width: 180px;
+    padding: 0 4px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  /* Footer Layout (Left: Place & Date, Right: Closing & Signature) */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+  }
+
+  .place-date-left {
+    text-align: left;
+    line-height: 2.2;
+  }
+
+  .place-date-left input {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    background: transparent;
+    min-width: 160px;
+    padding: 0 4px;
+  }
+
+  .closing-right {
+    text-align: right;
+    line-height: 2.2;
+  }
+
+  .closing-right input {
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 16px;
+    font-family: inherit;
+    background: transparent;
+    min-width: 180px;
+    padding: 0 4px;
+    text-align: right;
+  }
+
+  /* Signature Pad */
+  .signature-section {
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  #signature-pad {
+    border: 1px dashed #444;
+    width: 250px;
+    height: 90px;
+    background: #fafafa;
+    border-radius: 4px;
+    touch-action: none;
+    display: inline-block;
+  }
+
+  h4 {
+    margin: 8px 0 4px;
+    font-size: 15px;
+    color: #333;
+    text-align: right;
+  }
+
+  /* Buttons */
+  .btn-container {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .btn {
+    background: #d32f2f;
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.2s;
+  }
+
+  .btn:hover {
+    background: #b71c1c;
+  }
+
+  .btn.secondary {
+    background: #666;
+  }
+
+  .btn.secondary:hover {
+    background: #444;
+  }
+
+  /* A4 Print Styling */
+  @media print {
+    @page {
+      size: A4 portrait;
+      margin: 15mm;
+    }
+
+    body {
+      background: #fff;
+      padding: 0;
+    }
+
+    .no-print {
+      display: none !important;
+    }
+
+    .printable-sheet {
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .inline-select {
+      border: none !important;
+      border-bottom: 1px solid #000 !important;
+      border-radius: 0 !important;
+      background: transparent !important;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding: 0 4px !important;
+    }
+
+    .custom-reason-line {
+      display: none !important;
+    }
+
+    #signature-pad {
+      border: none;
+      background: transparent;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="master-container">
+  <div class="printable-sheet">
+
+    <!-- Header Date -->
+    <div class="letter-header">
+      <div>
+        ದಿನಾಂಕ: <input type="date" id="letterDate" onchange="syncSignDate(this.value)">
+      </div>
+    </div>
+
+    <!-- TO SECTION / ಇವರಿಗೆ -->
+    <div class="to-section">
+      <div style="font-weight: bold;">ಇವರಿಗೆ,</div>
+      <div><input type="text" id="toRecipient" value="ಮುಖ್ಯೋಪಾಧ್ಯಾಯರು / ಅಧಿಕಾರಿಗಳು,"></div>
+      <div><input type="text" id="toSchool" placeholder="ಶಾಲೆಯ ಹೆಸರು / ಕಚೇರಿ ಹೆಸರು"></div>
+      <div><input type="text" id="toPlace" placeholder="ಸ್ಥಳ" oninput="syncSignPlace(this.value)"></div>
+    </div>
+
+    <!-- Editable Subject Line -->
+    <div class="subject-line">
+      <span>ವಿಷಯ:</span>
+      <input type="text" id="subjectInput" value="ರಜೆ ಮಂಜೂರು ಮಾಡುವ ಬಗ್ಗೆ.">
+    </div>
+
+    <!-- Salutation -->
+    <div style="margin-bottom:12px;">
+      <input type="text" id="salutationInput" value="ಮಾನ್ಯರೇ," style="font-weight:600; border:none; border-bottom:1px solid #000; outline:none; font-size:16px; width:150px;">
+    </div>
+
+    <!-- Body -->
+    <div class="letter-body">
+      <p>
+        ನಾನು, <input placeholder="ಅರ್ಜಿದಾರರ ಹೆಸರು" id="applicantName" style="min-width:180px;">,
+        ಈ ಶಾಲೆಯಲ್ಲಿ 
+        <select id="designation" class="inline-select">
+          <option value="">-- ಹುದ್ದೆ ಆಯ್ಕೆ ಮಾಡಿ --</option>
+          <option value="ಮುಖ್ಯ ಶಿಕ್ಷಕರು">ಮುಖ್ಯ ಶಿಕ್ಷಕರು</option>
+          <option value="ಸಹ ಶಿಕ್ಷಕರು">ಸಹ ಶಿಕ್ಷಕರು</option>
+          <option value="ಸಹಾಯಕ ಶಿಕ್ಷಕರು">ಸಹಾಯಕ ಶಿಕ್ಷಕರು</option>
+          <option value="ಇತರೆ">ಇತರೆ</option>
+        </select>
+        ಆಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದ್ದೇನೆ.
+      </p>
+
+      <p>
+        ನನಗೆ 
+        <select id="reasonSelect" class="inline-select" onchange="handleReasonChange(this.value)">
+          <option value="">-- ರಜೆ ಕಾರಣ ಆಯ್ಕೆ ಮಾಡಿ --</option>
+          <option value="ಜ್ವರ">ಜ್ವರ</option>
+          <option value="ಸಂಬಂಧಿಕರ ಮದುವೆ">ಸಂಬಂಧಿಕರ ಮದುವೆ</option>
+          <option value="ಮದುವೆ">ಮದುವೆ</option>
+          <option value="ಸಂಬಂಧಿಕರ ಸಾವು">ಸಂಬಂಧಿಕರ ಸಾವು</option>
+          <option value="ಕಚೇರಿ ಕೆಲಸ">ಕಚೇರಿ ಕೆಲಸ</option>
+          <option value="ಅನಾರೋಗ್ಯ">ಅನಾರೋಗ್ಯ</option>
+          <option value="ಶಸ್ತ್ರಚಿಕಿತ್ಸೆ">ಶಸ್ತ್ರಚಿಕಿತ್ಸೆ</option>
+          <option value="ಪ್ರಸೂತಿ ರಜೆ">ಪ್ರಸೂತಿ ರಜೆ</option>
+          <option value="ಪ್ರಯಾಣ">ಪ್ರಯಾಣ</option>
+          <option value="ಕೌಟುಂಬಿಕ ಸಮಸ್ಯೆ">ಕೌಟುಂಬಿಕ ಸಮಸ್ಯೆ</option>
+          <option value="ಇತರೆ">ಇತರೆ (ಪ್ರತ್ಯೇಕವಾಗಿ ಬರೆಯಿರಿ)</option>
+        </select>
+        ದ ನಿಮಿತ್ತ <input placeholder="ಉದಾ: 3" id="leaveDays" style="width:50px; text-align:center;"> ದಿನಗಳ ರಜೆ ಅಗತ್ಯವಿದೆ. 
+      </p>
+
+      <!-- Optional Custom Text Input for Reasons -->
+      <div class="custom-reason-line no-print" id="customReasonContainer" style="display:none;">
+        <input type="text" id="customReasonInput" placeholder="ನಿಮ್ಮ ಇತರೆ ರಜೆಯ ಕಾರಣವನ್ನು ಇಲ್ಲಿ ಟೈಪ್ ಮಾಡಿ...">
+      </div>
+
+      <div class="date-row">
+        <span>ರಜೆ ದಿನಾಂಕ:</span>
+        <input type="date" id="fromDate" onchange="calcLeaveDays()">
+        <span>ರಿಂದ</span>
+        <input type="date" id="toDate" onchange="calcLeaveDays()">
+        <span>ವರೆಗೆ.</span>
+      </div>
+
+      <p>
+        ಆದ್ದರಿಂದ, ನನಗೆ ಮೇಲ್ಕಂಡ ದಿನಾಂಕಗಳಲ್ಲಿ ರಜೆ ಮಂಜೂರು ಮಾಡುವಂತೆ ಪ್ರೀತಿಯಿಂದ ವಿನಂತಿಸುತ್ತೇನೆ.
+      </p>
+
+      <!-- Centered Thank You -->
+      <div class="thank-you">
+        <input placeholder="ಧನ್ಯವಾದಗಳು" id="thankYou" value="ಧನ್ಯವಾದಗಳು">
+      </div>
+    </div>
+
+    <!-- Footer Container (Left: Place/Date, Right: Closing & Signature) -->
+    <div class="footer-container">
+      
+      <!-- LEFT SIDE: PLACE & DATE -->
+      <div class="place-date-left">
+        <div>ಸ್ಥಳ: <input placeholder="ಸ್ಥಳ" id="signPlace"></div>
+        <div>ದಿನಾಂಕ: <input type="date" id="signDate"></div>
+      </div>
+
+      <!-- RIGHT SIDE: CLOSING & SIGNATURE -->
+      <div class="closing-right">
+        <div>ತಮ್ಮ ವಿಶ್ವಾಸಿ,</div>
+        <div class="signature-section">
+          <canvas id="signature-pad"></canvas>
+        </div>
+        <div>ಹೆಸರು: <input placeholder="ಅರ್ಜಿದಾರರ ಹೆಸರು" id="signName"></div>
+        <div>ಪದನಾಮ: <input placeholder="ಪದನಾಮ" id="signDesignation"></div>
+      </div>
+
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-container no-print">
+      <button class="btn secondary" onclick="clearSign()">Clear Signature</button>
+      <button class="btn" onclick="window.print()">🖨 PRINT / ಮುದ್ರಿಸಿ</button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  // Handle Reason Selection Change
+  function handleReasonChange(value) {
+    const customContainer = document.getElementById("customReasonContainer");
+    if (value === "ಇತರೆ") {
+      customContainer.style.display = "block";
+    } else {
+      customContainer.style.display = "none";
+    }
+  }
+
+  // Calculate Leave Days automatically
+  function calcLeaveDays() {
+    const fromStr = document.getElementById("fromDate").value;
+    const toStr = document.getElementById("toDate").value;
+    if (fromStr && toStr) {
+      const d1 = new Date(fromStr);
+      const d2 = new Date(toStr);
+      const diffTime = d2 - d1;
+      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + 1;
+      if (diffDays > 0) {
+        document.getElementById("leaveDays").value = diffDays;
+      }
+    }
+  }
+
+  // Signature Canvas Logic
+  const canvas = document.getElementById("signature-pad");
+  const ctx = canvas.getContext("2d");
+  let drawing = false;
+
+  function initCanvas() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+    ctx.lineWidth = 2;
+    ctx.lineCap = "round";
+    ctx.strokeStyle = "#000000";
+  }
+
+  function getPos(e) {
+    const rect = canvas.getBoundingClientRect();
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    return {
+      x: clientX - rect.left,
+      y: clientY - rect.top
+    };
+  }
+
+  function startDrawing(e) {
+    drawing = true;
+    const pos = getPos(e);
+    ctx.beginPath();
+    ctx.moveTo(pos.x, pos.y);
+  }
+
+  function draw(e) {
+    if (!drawing) return;
+    const pos = getPos(e);
+    ctx.lineTo(pos.x, pos.y);
+    ctx.stroke();
+  }
+
+  function stopDrawing() {
+    drawing = false;
+    ctx.beginPath();
+  }
+
+  // Mouse listeners
+  canvas.addEventListener("mousedown", startDrawing);
+  canvas.addEventListener("mousemove", draw);
+  canvas.addEventListener("mouseup", stopDrawing);
+  canvas.addEventListener("mouseleave", stopDrawing);
+
+  // Touch listeners
+  canvas.addEventListener("touchstart", (e) => { e.preventDefault(); startDrawing(e); }, { passive: false });
+  canvas.addEventListener("touchmove", (e) => { e.preventDefault(); draw(e); }, { passive: false });
+  canvas.addEventListener("touchend", (e) => { e.preventDefault(); stopDrawing(); }, { passive: false });
+
+  function clearSign() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  // Sync Place & Date Logic
+  function syncSignDate(val) {
+    document.getElementById("signDate").value = val;
+  }
+  
+  function syncSignPlace(val) {
+    document.getElementById("signPlace").value = val;
+  }
+
+  // Double sync Name and Designation
+  const appName = document.getElementById("applicantName");
+  const signName = document.getElementById("signName");
+  const desigSelect = document.getElementById("designation");
+  const signDesig = document.getElementById("signDesignation");
+
+  appName.addEventListener("input", () => { signName.value = appName.value; });
+  signName.addEventListener("input", () => { appName.value = signName.value; });
+
+  desigSelect.addEventListener("change", () => { signDesig.value = desigSelect.value; });
+  signDesig.addEventListener("input", () => { desigSelect.value = "ಇತರೆ"; });
+
+  // Page Load Setup
+  window.addEventListener("load", () => {
+    initCanvas();
+    const today = new Date().toISOString().split("T")[0];
+    document.getElementById("letterDate").value = today;
+    document.getElementById("signDate").value = today;
+  });
+</script>
+
+</body>
+</html>
